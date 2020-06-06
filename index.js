@@ -18,6 +18,8 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     );
   },
   onComplete() {
-    console.log("Time completed");
+    setTimeout(() => {
+      circle.setAttribute("stroke-dasharray", perimeter);
+    }, 1000);
   },
 });
